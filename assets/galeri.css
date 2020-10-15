@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap&subset=latin-ext');
+
+*,html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*Navbar*/
+nav{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background-color: #000000;
+}
+nav ul{
+    position: relative;
+    margin-left: 4%;
+    margin-right: 2%;
+    top: 40px;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    display: block;
+    margin: 0 2em;
+}
+
+.logo img{
+    position: relative;
+    margin-right: 20px;
+    width: 60px;
+    margin-top: -20px;
+}
+.search-content{
+    margin-top: -20px;
+}
+.search{
+    width: 600px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: normal;
+}
+   
+.image{
+    margin-top: -35px;
+    margin-left: 94%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    top: 50px;
+    font-size: 16px;
+}
+
+a.active{
+    font-weight: bold;
+}
+
+.about{
+    margin-top: -10px;
+}
+
+.login{
+    margin-top: -8px;
+}
+
+.border{
+  color: #ffffff;
+  margin-top: 10px;
+  border: 1px solid #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.tengah{
+  position: relative;
+  width: 100%;
+  background-color: transparent;
+}
+
+.tengah ul{
+  position: relative;
+  float: left;
+  margin-left: 17%;
+  justify-content: center;
+  align-content: center; 
+  margin-top: -60px; 
+  top: 30px;
+}
+
+.tengah ul li{
+  text-align: center;
+  list-style: none;
+  display: block;
+  margin: 0;
+  margin-top: -10px;
+}
+
+.tengah ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px 60px 6px 10px;
+}
+
+.new{
+    position: absolute;
+    margin-left: -80px;
+    margin-top: -8px;
+}
+
+.menu{
+    display: block;
+}
+
+.menu li{
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+}
+
+.menu li a.active{
+    font-weight: bold;
+    background: #000;
+}
+
+.menu li:first-child{
+    margin-left: 0;
+}
+
+.menu li a:hover,.menu li:hover>a {
+    color: #fff;
+    background: #000000;
+}
+
+.menu ul {
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    width: 280px;
+    height: 200px;
+    position: absolute;
+    left: 0px;
+    z-index: 99;
+    transform: translate(0.20px);
+    transition: all 0.2s ease-out;
+}
+.menu ul:after {
+    bottom: 100%;
+    left: 20%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 6px;
+    margin-left: -6px;
+}
+
+.menu ul li {
+    display: block;
+    float: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li a {
+    font-size: 16px;
+    font-weight: normal;
+    display: block;
+    color: #ffffff;
+    background: #161616;
+    text-align: left;
+}
+
+.menu ul li a:hover,.menu ul li:hover>a {
+    background: #161616;
+    color: #FFBA17;
+    width: 280px;
+}
+
+.menu li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.menu ul ul {
+    left: 149px;
+    top: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(20px,20px);
+    transition: all 0.2s ease-out;
+}
+
+.menu ul ul.multi-sub li a{
+    width: 200px;
+    margin-left: 130px;
+}
+
+.menu ul ul:after {
+    left: 125px;
+    top: 10%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #ffffff;
+    border-width: 6px;
+    margin-top: -6px;
+}
+
+.menu li>ul ul:hover {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0,0);
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .mainWrap {
+        width: 768px;
+    }
+
+    .menu ul {
+        top: 37px;
+    }
+
+    .menu li a {
+        font-size: 12px;
+    }
+
+    a.homer {
+        background: #374147;
+    }
+}
+
+.galeri{
+    margin-left: 5%;
+    margin-top: -10%;
+}
+
+p{
+    font-size: 22px;
+    font-weight: normal;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 400;
+    padding: 1em 0;
+}
+
+.galeri-card{
+    margin: 1em 3.5em;
+    display: flex;
+    
+}
+
+.galeri-card img{
+    transition: 1s;
+    padding: 15px;
+    width: 300px;
+}
+.galeri-card img:hover{
+ filter: grayscale(100%);
+  transform:scale(1.1);
+}
+
+hr{
+    border: 1px solid #E0E0E0;
+    width: auto;
+    margin: 2em 4.5em;
+}
+
+.kosong{
+    width: 100%;
+    height: 155px;
+}
+
+footer {
+  width: 100%;
+  background: #000000;
+  height: 350px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-box{
+  display: flex;
+  flex-flow: row;
+  margin: 0 3em;
+  padding: 20px 0px 30px 0px;
+}
+
+.footer-logo{
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  margin: 3em;
+}
+
+.footer-logo p{
+  color: #ffffff;
+  font-size: 18px;
+  margin: 2em 0;
+  text-align: center;
+}
+
+.footer-content{
+  display: flex;
+  flex-flow: row;
+  margin: 3em 1.5em;
+}
+
+.footer-content .head{
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0 40px;
+}
+
+.footer-content ul li{
+  margin: 0.25em 2.5em;
+  padding: 5px 0;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.footer-content ul li a{
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+section.copyright{
+  background: #000000;
+  margin-top: -20px;
+}
+
+section.copyright>.social-icon{
+  float: right;
+  margin-right: 18%;
+  margin-top: -50px;
+}
+
+.social-icon img{
+  margin: 0 5px;
+}
+.copy{
+  margin-left: 50px;
+  color: #e0e0e0;
+  margin-top: -20px;
+  padding: 1em 0;
+}
+.p{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: -100px;
+  float: right;
+  margin-right: 22.75%;
+}
+
+li.satu{
+  display: flex;
+  flex-direction: row;
+}
+
+li.satu .ya{
+  width: 50px;
+}
